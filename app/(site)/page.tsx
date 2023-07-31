@@ -5,30 +5,31 @@ export default function Home() {
       <div
       className="
         flex
-        min-h-full
+        min-h-screen
         flex-col
         justify-center
-        py-11
-        sm:px-6
-        lg:px-8
-        bg-gray-100"
+        lg:px-10
+        bg-gray-200"
       >
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
             <img
                 alt="Logo"
                 height="48"
                 width="48"
-                className="mx-auto h-14 w-auto" 
-                src="images/chat.png" 
+                className="mx-auto h-16 w-auto" 
+                src="images/logo.png" 
             />
+            <h5 className="mt-0 py-2 text-sm text-center font-semibold text-gray-800">
+              Welcome to buZZtalk...
+            </h5>
             <h2 
             className="
-                mt-6 
+                mt-2 
                 text-center 
-                text-3xl 
+                text-2xl 
                 font-bold
                 tracking-tight
-                text-gray-900">
+                text-gray-800">
                 Sign in to your account!
             </h2>
         </div>
