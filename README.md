@@ -18,3 +18,8 @@ This web application is designed to provide users with a seamless and interactiv
 
 
 
+## Screenshots
+
+**Login/Sign Up screen**
+
+![image](https://github.com/rahul-nauni/buZZtalk/assets/116102220/96cfc93e-0249-4125-8111-76ea0267dd82)
