@@ -1,11 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Source_Sans_3 } from 'next/font/google'
 
 import ToasrterContext from './context/ToasterContext'
 import AuthContext from './context/AuthContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Source_Sans_3({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'buZZtalk',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <AuthContext>
           <ToasrterContext />
           {children}

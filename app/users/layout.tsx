@@ -1,4 +1,6 @@
 import Sidebar from '../components/sidebar/Sidebar';
+import getUsers from '../actions/getUsers';
+import UserList from './components/UserList';
 
 // reason why its async is because we are going to be fetching data from the server
 export default async function UsersLayout({ 
@@ -6,9 +8,11 @@ export default async function UsersLayout({
 }:{
     children: React.ReactNode;
 }) {
+    const users = await getUsers();
     return (
         <Sidebar>
             <div className="h-full">
+                <UserList items={users}/>
                 {children}
             </div>
         </Sidebar>

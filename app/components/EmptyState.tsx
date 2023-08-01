@@ -23,7 +23,7 @@ const EmptyState = () => {
             >
                 <h3
                     className="
-                        mt-2
+                        h-full
                         text-2xl
                         font-semibold
                         text-gray-800"
@@ -31,7 +31,6 @@ const EmptyState = () => {
                     Start buZZing!
                 </h3>
             </div>
-            Empty
         </div>
     );
 }

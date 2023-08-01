@@ -1,4 +1,5 @@
 import EmptyState from "../components/EmptyState";
+
 const Users = () => {
     return (
         // NextAuth Sign Out using arrow function
