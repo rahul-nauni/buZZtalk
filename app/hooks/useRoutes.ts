@@ -1,9 +1,9 @@
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
-import { HiOutlineChat } from 'react-icons/hi';
+import { HiOutlineChatAlt2 as HiOutlineChat } from 'react-icons/hi';
 import {
-    HiOutlineLockOpen,
-    HiOutlineUsers
+    HiOutlineLockOpen as HiMiniLockOpen,
+    HiOutlineUserCircle as HiOutlineUsers,
 } from 'react-icons/hi2';
 import { signOut } from "next-auth/react";
 import useConversation from "./useConversation";
@@ -28,7 +28,7 @@ const useRoutes = () => {
         {
             label: 'Sign Out',
             href: "#",
-            icon: HiOutlineLockOpen,
+            icon: HiMiniLockOpen,
             onClick: () => signOut(),
         }
     ], [conversationId, pathname]);

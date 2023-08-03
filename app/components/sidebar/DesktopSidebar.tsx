@@ -24,12 +24,12 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({
             lg:inset-y-0
             lg:left-0
             lg:z-60
-            lg:w-10
+            lg:w-12
             xl:px-4
             lg:overflow-y-auto
             lg:bg-gray-100
             lg:border-r-[1px]
-            lg:pb-2
+            lg:pb-4
             lg:pt-0
             lg:flex
             lg:flex-col

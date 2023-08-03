@@ -29,16 +29,15 @@ const UserBox: React.FC<UserBoxProps> = ({
     return (
         <div onClick={handleUserClick}
             className="
-            mt-2
             w-full
             relative
             flex
             items-center
-            space-x-4
+            space-x-3
             bg-white
-            p-4
+            p-3
             hover:bg-neutral-100
-            rounded-full
+            rounded-lg
             transition
             ease-in-out
             cursor-pointer"
@@ -50,7 +49,7 @@ const UserBox: React.FC<UserBoxProps> = ({
                         <p className="
                             text-sm
                             font-medium
-                            text-neutral-800
+                            text-gray-900
                             truncate"
                         >
                             {data.name}

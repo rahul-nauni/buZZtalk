@@ -1,6 +1,5 @@
 import prisma from "@/app/libs/prismadb";
 import getCurrentUser from "./getCurrentUser";
-import { toast } from "react-hot-toast";
 
 const getConversations = async () => {
     const currentUser = await getCurrentUser();
@@ -12,7 +11,7 @@ const getConversations = async () => {
     try {
         const conversations = await prisma.conversation.findMany({
             orderBy: {
-                lastMessageAt: "desc"
+                lastMessageAt: "desc",
             },
             where: {
                 userIds: {
@@ -26,14 +25,13 @@ const getConversations = async () => {
                         sender: true,
                         seen: true
                     }
-                }
+                },
             }
         });
         return conversations;
     } catch (error: any) {
-        toast.error('Unxpected error while fetching conversations');
         return [];
     }
-}
+};
 
 export default getConversations;

@@ -3,6 +3,7 @@
 import { User } from "@prisma/client"
 import React from "react";
 import UserBox from "./UserBox";
+import clsx from "clsx";
 
 interface UserListProps {
     items: User[];
@@ -17,22 +18,20 @@ const UserList: React.FC<UserListProps> = ({
             inset-y-0
             pb-10
             lg:pb-20
-            lg:left-10
+            lg:left-20
             lg:w-80
             lg:block
             overflow-y-auto
-            border-gray-200
-            w-full
-            left-0"
+          border-gray-200"
         >
-            <div className="px-4">
-                <div className="flex-col">
+            <div className="px-2">
+                <div className="flex justify-between mb-4 pt-4">
                     <div className="
                         text-2xl
-                        font-semibold
+                        font-bold
                         text-neutral-800
-                        py-2
                         border-b
+                        transition
                     ">
                         People
                     </div>
